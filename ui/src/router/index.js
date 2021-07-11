@@ -22,6 +22,36 @@ const routes = [
     name: 'categories',
     meta: {layout: 'main'},
     component: () => import('../views/Categories')
+  },
+  {
+    path: '/detailrecord',
+    name: 'detailrecord',
+    meta: {layout: 'main'},
+    component: () => import('../views/DetailRecord')
+  },
+  {
+    path: '/planning',
+    name: 'planning',
+    meta: {layout: 'main'},
+    component: () => import('../views/Planning')
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    meta: {layout: 'main'},
+    component: () => import('../views/Profile')
+  },
+  {
+    path: '/record',
+    name: 'record',
+    meta: {layout: 'main'},
+    component: () => import('../views/Record')
+  },
+  {
+    path: '/register',
+    name: 'register',
+    meta: {layout: 'empty'},
+    component: () => import('../views/Register')
   }
   // {
   //   path: '/about',

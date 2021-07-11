@@ -36,6 +36,7 @@
       </ul>
     </div>
   </nav>
+
   <ul class="sidenav app-sidenav open">
     <li>
       <a href="#" class="waves-effect waves-orange pointer">Счет</a>
@@ -59,70 +60,43 @@
 
       <div>
         <div class="page-title">
-          <h3>Счет</h3>
+          <h3>Профиль</h3>
+        </div>
 
-          <button class="btn waves-effect waves-light btn-small">
-            <i class="material-icons">refresh</i>
+        <form class="form">
+          <div class="input-field">
+            <input
+                id="description"
+                type="text"
+            >
+            <label for="description">Имя</label>
+            <span
+                class="helper-text invalid">name</span>
+          </div>
+
+          <button class="btn waves-effect waves-light" type="submit">
+            Обновить
+            <i class="material-icons right">send</i>
           </button>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m6 l4">
-            <div class="card light-blue bill-card">
-              <div class="card-content white-text">
-                <span class="card-title">Счет в валюте</span>
-
-                <p class="currency-line">
-                  <span>12.0 Р</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l8">
-            <div class="card orange darken-3 bill-card">
-              <div class="card-content white-text">
-                <div class="card-header">
-                  <span class="card-title">Курс валют</span>
-                </div>
-                <table>
-                  <thead>
-                  <tr>
-                    <th>Валюта</th>
-                    <th>Курс</th>
-                    <th>Дата</th>
-                  </tr>
-                  </thead>
-
-                  <tbody>
-                  <tr>
-                    <td>руб</td>
-                    <td>12121</td>
-                    <td>12.12.12</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
 
     </div>
   </main>
 
-<!--  <div class="fixed-action-btn">-->
-<!--    <a class="btn-floating btn-large blue" href="#">-->
-<!--      <i class="large material-icons">add</i>-->
-<!--    </a>-->
-<!--  </div>-->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue" href="#">
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home'
+  name: "Profile"
 }
 </script>
+
+<style scoped>
+
+</style>
